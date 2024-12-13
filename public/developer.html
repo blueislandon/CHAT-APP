@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="main-chat">
+            <div class="chat-header">
+                Developer Page
+                <a href="index.html" class="developer-link">Back to Chat</a>
+            </div>
+            <div class="message-container" id="developer-message-container">
+                <!-- Messages will go here -->
+            </div>
+            <button id="clear-messages-button">Clear Messages</button>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="developer.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* Reset and global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #36393f; /* Dark background */
+  color: #dcddde; /* Light text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  margin: 20px;
+  background-color: #2f3136; /* Darker container background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+.main-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  padding: 12px;
+  background-color: #202225; /* Dark header background */
+  color: #ffffff; /* White text */
+  font-size: 1.2em;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: relative;
+}
+
+.developer-link {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7289da; /* Discord blue */
+  text-decoration: none;
+}
+
+.developer-link:hover {
+  text-decoration: underline;
+}
+
+.message-container {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  background-color: #2f3136; /* Darker message container background */
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background-color: #40444b; /* Darker input background */
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+#username-input,
+#message-input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2f3136; /* Slightly lighter input background */
+  color: #dcddde; /* Light text color */
+  font-size: 14px;
+}
+
+#send-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7289da; /* Discord blue */
+  color: #ffffff; /* White text */
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#send-button:hover {
+  background-color: #677bc4; /* Darker hover color */
+}
+
+@media (max-width: 1768px) {
+  .app-container {
+    margin: 10px;
+    max-width: 100%;
+  }
+
+  .chat-input {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px;
+  }
+
+  #username-input {
+    margin-bottom: 8px;
+  }
+
+  #send-button {
+    margin-top: 8px;
+  }
+}
